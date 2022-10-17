@@ -1,4 +1,4 @@
-package com.gigsberg.regression;
+package template;
 
 import java.lang.reflect.Method;
 

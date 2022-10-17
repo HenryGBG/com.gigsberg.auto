@@ -3,6 +3,7 @@ package com.gigsberg.regression;
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
@@ -32,34 +33,76 @@ public class Testcase_Festivals_Regression extends BaseTest {
 	}
 
 	@Test
-	public void TC_01_Theatre_Comedy(Method method) {
-		ExtentTestManager.startTest(method.getName(), "Buy a voucher");
-
-		ExtentTestManager.getTest().log(Status.INFO, "Voucher - Step 00: Navigate to 'Homepage'");
+	public void TC_01_Festivals_United_Kingdom(Method method) {
+		ExtentTestManager.startTest(method.getName(), "Festivals Items");
+		ExtentTestManager.getTest().log(Status.INFO, "Festivals - Step 00: Navigate to 'https://gigsberg.com/'");
 		homePage = PageGenerateManager.getHomePage(driver);
 
-		ExtentTestManager.getTest().log(Status.INFO, "Voucher - Step 01: Navigate to 'Voucher' link");
+		ExtentTestManager.getTest().log(Status.INFO, "Festivals - Step 01: Navigate to 'Festivals/United Kingdom'");
+		homePage.hoverToMainCategory(driver, "Festivals");
+		homePage.clickToSubCategory(driver, "United Kingdom");
+
+		ExtentTestManager.getTest().log(Status.INFO,
+				"Festivals - Step 02: Verify the sub-title 'United Kingdom Tickets' display");
+		Assert.assertEquals(homePage.getConcertSubTitle("UK Festivals Tickets"), "UK Festivals Tickets");
 
 	}
 
 	@Test
-	public void TC_02_Theatre_Ballet_Dance(Method method) {
+	public void TC_02_Festivals_International_Festivals(Method method) {
+		ExtentTestManager.startTest(method.getName(), "Festivals Items");
+		ExtentTestManager.getTest().log(Status.INFO, "Festivals - Step 00: Navigate to 'https://gigsberg.com/'");
+		homePage = PageGenerateManager.getHomePage(driver);
+
+		ExtentTestManager.getTest().log(Status.INFO,
+				"Festivals - Step 01: Navigate to 'Festivals/International Festivals'");
+		homePage.hoverToMainCategory(driver, "Festivals");
+		homePage.clickToSubCategory(driver, "International Festivals");
+
+		ExtentTestManager.getTest().log(Status.INFO,
+				"Festivals - Step 02: Verify the sub-title 'International Festivals Tickets' display");
+		Assert.assertEquals(homePage.getConcertSubTitle("International Festivals Tickets"),
+				"International Festivals Tickets");
 
 	}
 
 	@Test
-	public void TC_03_Theatre_Classical(Method method) {
+	public void TC_03_Festivals_Spain(Method method) {
+		ExtentTestManager.startTest(method.getName(), "Festivals Items");
+		ExtentTestManager.getTest().log(Status.INFO, "Festivals - Step 00: Navigate to 'https://gigsberg.com/'");
+		homePage = PageGenerateManager.getHomePage(driver);
+
+		ExtentTestManager.getTest().log(Status.INFO,
+				"Festivals - Step 01: Navigate to 'Festivals/International Festivals'");
+		homePage.hoverToMainCategory(driver, "Festivals");
+		homePage.clickToSubCategory(driver, "International Festivals");
+
+		ExtentTestManager.getTest().log(Status.INFO,
+				"Festivals - Step 02: Verify the sub-title 'International Festivals Tickets' display");
+		Assert.assertEquals(homePage.getConcertSubTitle("International Festivals Tickets"),
+				"International Festivals Tickets");
 	}
 
 	@Test
-	public void TC_04_Theatre_Shows(Method method) {
+	public void TC_04_Festivals_Australia(Method method) {
+		ExtentTestManager.startTest(method.getName(), "Festivals Items");
+		ExtentTestManager.getTest().log(Status.INFO, "Festivals - Step 00: Navigate to 'https://gigsberg.com/'");
+		homePage = PageGenerateManager.getHomePage(driver);
+
+		ExtentTestManager.getTest().log(Status.INFO, "Festivals - Step 01: Navigate to 'Festivals/Spain'");
+		homePage.hoverToMainCategory(driver, "Festivals");
+		homePage.clickToSubCategory(driver, "Spain");
+
+		ExtentTestManager.getTest().log(Status.INFO,
+				"Festivals - Step 02: Verify the sub-title 'Spain Tickets' display");
+		Assert.assertEquals(homePage.getConcertSubTitle("Festivals in Spain Tickets"), "Festivals in Spain Tickets");
 	}
 
 	@Test
-	public void TC_05_Theatre_Conferences_Speaking_Tour(Method method) {
+	public void TC_05_Festivals_Netherlands(Method method) {
 	}
 
 	@Test
-	public void TC_06_Theatre_All_Theatre(Method method) {
+	public void TC_06_Festivals_All_Festivals(Method method) {
 	}
 }
