@@ -23,9 +23,9 @@ public class HomePageObject extends BasePage {
 		clickToElement(driver, GlobalBaseUI.DYNAMIC_SUB_CATEGORY_BY_LABEL, subCategory);
 	}
 
-	public String getConcertSubTitle() {
-		waitForElementVisible(driver, GlobalBaseUI.DYNAMIC_SUB_TITLE_BY_LABEL);
-		return getElementText(driver, GlobalBaseUI.DYNAMIC_SUB_TITLE_BY_LABEL);
+	public String getConcertSubTitle(String subCategory) {
+		waitForElementVisible(driver, GlobalBaseUI.DYNAMIC_SUB_TITLE_BY_LABEL, subCategory);
+		return getElementText(driver, GlobalBaseUI.DYNAMIC_SUB_TITLE_BY_LABEL, subCategory);
 	}
 
 	public void getUpcomingConcertRock(WebDriver driver) {

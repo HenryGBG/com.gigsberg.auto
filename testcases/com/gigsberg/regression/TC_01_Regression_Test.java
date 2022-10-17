@@ -38,7 +38,7 @@ public class TC_01_Regression_Test extends BaseTest {
 		homePage.clickToSubCategory(driver, "Rock");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Concerts - Step 02: Verify the sub-title 'Rock Tickets' display");
-		Assert.assertEquals(homePage.getConcertSubTitle(), "Rock Tickets");
+		Assert.assertEquals(homePage.getConcertSubTitle("Rock Tickets"), "Rock Tickets");
 	}
 
 }

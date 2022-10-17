@@ -2,7 +2,7 @@ package commons;
 
 public class GlobalConstants {
 //	public static final String PORTAL_PAGE_URL = "https://gigsberg.com/";
-	public static final long LONG_TIME_OUT = 30;
+	public static final long LONG_TIME_OUT = 5;
 	public static final long SHORT_TIME_OUT = 3;
 	public static final String PASSWORD = "12345678";
 	public static final String CONFIRM_PASSWORD = "12345678";
