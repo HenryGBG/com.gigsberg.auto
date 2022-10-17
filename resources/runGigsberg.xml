@@ -9,6 +9,9 @@
 		<classes>
 			<class name="com.gigsberg.regression.Testcase_Theatre_Regression" />
 			<class name="com.gigsberg.regression.Testcase_Concerts_Regression" />
+			<class name="com.gigsberg.regression.Testcase_Sports_Regression" />
+			<class name="com.gigsberg.regression.Testcase_Festivals_Regression" />
+
 		</classes>
 	</test>
 

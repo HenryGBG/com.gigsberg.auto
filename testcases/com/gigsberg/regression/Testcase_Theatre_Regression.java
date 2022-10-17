@@ -121,7 +121,7 @@ public class Testcase_Theatre_Regression extends BaseTest {
 		homePage.clickToSubCategory(driver, "All Theatre");
 
 		ExtentTestManager.getTest().log(Status.INFO,
-				"Theatre - Step 02: Verify the sub-title 'All Theatre Tickets' display");
-		Assert.assertEquals(homePage.getConcertSubTitle("All Theatre Tickets"), "All Theatre Tickets");
+				"Theatre - Step 02: Verify the sub-title 'Theatre Tickets' display");
+		Assert.assertEquals(homePage.getConcertSubTitle("Theatre Tickets"), "Theatre Tickets");
 	}
 }

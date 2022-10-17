@@ -6,15 +6,8 @@
     <listener class-name="reportConfig.ExtentTestListener"/>
   </listeners>
   <test thread-count="5" name="Run on CHROME(failed)">
-    <parameter name="browser" value="chrome"/>
+    <parameter name="browser" value="h_chrome"/>
     <classes>
-      <class name="com.gigsberg.regression.Testcase_Theatre_Regression">
-        <methods>
-          <include name="afterClass"/>
-          <include name="setup"/>
-          <include name="TC_06_Theatre_All_Theatre" invocation-numbers="0"/>
-        </methods>
-      </class> <!-- com.gigsberg.regression.Testcase_Theatre_Regression -->
       <class name="com.gigsberg.regression.Testcase_Concerts_Regression">
         <methods>
           <include name="setup"/>
@@ -22,6 +15,13 @@
           <include name="TC_03_Concerts_R_and_B" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.gigsberg.regression.Testcase_Concerts_Regression -->
+      <class name="com.gigsberg.regression.Testcase_Sports_Regression">
+        <methods>
+          <include name="setup"/>
+          <include name="afterClass"/>
+          <include name="TC_06_Sports_WWE" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.gigsberg.regression.Testcase_Sports_Regression -->
     </classes>
   </test> <!-- Run on CHROME(failed) -->
 </suite> <!-- Failed suite [Gigsberg] -->
