@@ -393,7 +393,7 @@ public class BasePage {
 		explicitWait.until(ExpectedConditions.presenceOfElementLocated(getBylocator(locatorType)));
 	}
 
-	public void waitForElementVisible(WebDriver driver, String locatorType) {
+	public void String(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getBylocator(locatorType)));
 	}

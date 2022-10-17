@@ -32,4 +32,14 @@ public class HomePageObject extends BasePage {
 		getUpcomingConcert(driver, GlobalBaseUI.UPCOMING_CONCERT_ROCK);
 	}
 
+	public FooterPageObject clickToMenuByHref(String hrefMenu) {
+		waitForElementVisible(driver, GlobalBaseUI.DYNAMIC_MENU_ON_FOOTER, hrefMenu);
+		clickToElement(driver, GlobalBaseUI.DYNAMIC_MENU_ON_FOOTER, hrefMenu);
+		return new FooterPageObject(driver);
+	}
+
+	public void acceptGBGCookies() {
+		waitForElementVisible(driver, GlobalBaseUI.ACCEPT_COOKIE_XPATH);
+		clickToElement(driver, GlobalBaseUI.ACCEPT_COOKIE_XPATH);
+	}
 }

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="29" passed="27" failed="2" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-17T10:59:59Z" name="Gigsberg" finished-at="2022-10-17T11:03:00Z" duration-ms="181066">
+  <suite started-at="2022-10-17T12:48:22Z" name="Gigsberg" finished-at="2022-10-17T12:48:48Z" duration-ms="26581">
     <groups>
     </groups>
-    <test started-at="2022-10-17T10:59:59Z" name="Run on CHROME" finished-at="2022-10-17T11:03:00Z" duration-ms="181066">
-      <class name="com.gigsberg.regression.Testcase_Concerts_Regression">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:30Z" name="setup" finished-at="2022-10-17T11:00:33Z" duration-ms="3280" status="PASS">
+    <test started-at="2022-10-17T12:48:22Z" name="Run on CHROME" finished-at="2022-10-17T12:48:48Z" duration-ms="26581">
+      <class name="com.gigsberg.regression.Testcase_Footer_Menu">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:22Z" name="setup" finished-at="2022-10-17T12:48:28Z" duration-ms="6417" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,22 +23,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_01_Concerts_Rock(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:33Z" name="TC_01_Concerts_Rock" finished-at="2022-10-17T11:00:34Z" duration-ms="1323" status="PASS">
+        <test-method signature="TC_01_Footer_Menu_Help_Centre(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:28Z" name="TC_01_Footer_Menu_Help_Centre" finished-at="2022-10-17T12:48:30Z" duration-ms="1363" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Concerts_Regression.TC_01_Concerts_Rock(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Footer_Menu.TC_01_Footer_Menu_Help_Centre(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Concerts_Rock -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:34Z" name="afterClass" finished-at="2022-10-17T11:00:34Z" duration-ms="62" status="PASS">
+        </test-method> <!-- TC_01_Footer_Menu_Help_Centre -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:30Z" name="afterClass" finished-at="2022-10-17T12:48:30Z" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:34Z" name="setup" finished-at="2022-10-17T11:00:38Z" duration-ms="3308" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:30Z" name="setup" finished-at="2022-10-17T12:48:33Z" duration-ms="3290" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,22 +54,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_02_Concerts_Pop(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:38Z" name="TC_02_Concerts_Pop" finished-at="2022-10-17T11:00:40Z" duration-ms="2555" status="PASS">
+        <test-method signature="TC_02_Footer_Menu_Terms_Conditions(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:33Z" name="TC_02_Footer_Menu_Terms_Conditions" finished-at="2022-10-17T12:48:34Z" duration-ms="1314" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Concerts_Regression.TC_02_Concerts_Pop(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Footer_Menu.TC_02_Footer_Menu_Terms_Conditions(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_Concerts_Pop -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:40Z" name="afterClass" finished-at="2022-10-17T11:00:40Z" duration-ms="65" status="PASS">
+        </test-method> <!-- TC_02_Footer_Menu_Terms_Conditions -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:34Z" name="afterClass" finished-at="2022-10-17T12:48:34Z" duration-ms="64" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:40Z" name="setup" finished-at="2022-10-17T11:00:44Z" duration-ms="3379" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:34Z" name="setup" finished-at="2022-10-17T12:48:38Z" duration-ms="3451" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -85,74 +85,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_03_Concerts_R_and_B(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:44Z" name="TC_03_Concerts_R_and_B" finished-at="2022-10-17T11:00:54Z" duration-ms="9987" status="FAIL">
+        <test-method signature="TC_03_Footer_Menu_Contact_Us(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:38Z" name="TC_03_Footer_Menu_Contact_Us" finished-at="2022-10-17T12:48:39Z" duration-ms="1297" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Concerts_Regression.TC_03_Concerts_R_and_B(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Footer_Menu.TC_03_Footer_Menu_Contact_Us(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h1[@class='concert_sub_title' and text()='R&B Tickets'] (tried for 5 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h1[@class='concert_sub_title' and text()='R&B Tickets'] (tried for 5 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at commons.BasePage.waitForElementVisible(BasePage.java:403)
-at pageObjects.HomePageObject.getConcertSubTitle(HomePageObject.java:27)
-at com.gigsberg.regression.Testcase_Concerts_Regression.TC_03_Concerts_R_and_B(Testcase_Concerts_Regression.java:77)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h1[@class='concert_sub_title' and text()='R&B Tickets']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-9TSO38K', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_03_Concerts_R_and_B -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:54Z" name="afterClass" finished-at="2022-10-17T11:00:54Z" duration-ms="70" status="PASS">
+        </test-method> <!-- TC_03_Footer_Menu_Contact_Us -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:39Z" name="afterClass" finished-at="2022-10-17T12:48:39Z" duration-ms="71" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:54Z" name="setup" finished-at="2022-10-17T11:00:57Z" duration-ms="3254" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:39Z" name="setup" finished-at="2022-10-17T12:48:46Z" duration-ms="6370" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -168,855 +116,22 @@ at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_04_Concerts_HardRockMetal(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:00:57Z" name="TC_04_Concerts_HardRockMetal" finished-at="2022-10-17T11:01:00Z" duration-ms="2421" status="PASS">
+        <test-method signature="TC_04_Footer_Menu_Privacy_Policy(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:46Z" name="TC_04_Footer_Menu_Privacy_Policy" finished-at="2022-10-17T12:48:48Z" duration-ms="2804" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Concerts_Regression.TC_04_Concerts_HardRockMetal(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Footer_Menu.TC_04_Footer_Menu_Privacy_Policy(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_04_Concerts_HardRockMetal -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:00Z" name="afterClass" finished-at="2022-10-17T11:01:00Z" duration-ms="54" status="PASS">
+        </test-method> <!-- TC_04_Footer_Menu_Privacy_Policy -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:48Z" name="afterClass" finished-at="2022-10-17T12:48:48Z" duration-ms="45" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:00Z" name="setup" finished-at="2022-10-17T11:01:03Z" duration-ms="3296" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_05_Concerts_Rap(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:03Z" name="TC_05_Concerts_Rap" finished-at="2022-10-17T11:01:05Z" duration-ms="1918" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Concerts_Regression.TC_05_Concerts_Rap(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Concerts_Rap -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:05Z" name="afterClass" finished-at="2022-10-17T11:01:05Z" duration-ms="71" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:05Z" name="setup" finished-at="2022-10-17T11:01:08Z" duration-ms="3386" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_06_Concerts_HipHopReggae(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:08Z" name="TC_06_Concerts_HipHopReggae" finished-at="2022-10-17T11:01:10Z" duration-ms="1363" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Concerts_Regression.TC_06_Concerts_HipHopReggae(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_06_Concerts_HipHopReggae -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:10Z" name="afterClass" finished-at="2022-10-17T11:01:10Z" duration-ms="69" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:10Z" name="setup" finished-at="2022-10-17T11:01:13Z" duration-ms="3200" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_07_Concerts_Alternative_Indie(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:13Z" name="TC_07_Concerts_Alternative_Indie" finished-at="2022-10-17T11:01:15Z" duration-ms="1783" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Concerts_Regression.TC_07_Concerts_Alternative_Indie(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_07_Concerts_Alternative_Indie -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:15Z" name="afterClass" finished-at="2022-10-17T11:01:15Z" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:15Z" name="setup" finished-at="2022-10-17T11:01:18Z" duration-ms="3375" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_08_Concerts_All_Concerts(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:18Z" name="TC_08_Concerts_All_Concerts" finished-at="2022-10-17T11:01:20Z" duration-ms="1429" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Concerts_Regression.TC_08_Concerts_All_Concerts(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_08_Concerts_All_Concerts -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:20Z" name="afterClass" finished-at="2022-10-17T11:01:20Z" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:20Z" name="setup" finished-at="2022-10-17T11:01:23Z" duration-ms="3366" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_09_Concerts_Rock_And_Pop(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:23Z" name="TC_09_Concerts_Rock_And_Pop" finished-at="2022-10-17T11:01:26Z" duration-ms="2373" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Concerts_Regression.TC_09_Concerts_Rock_And_Pop(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_09_Concerts_Rock_And_Pop -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Concerts_Regression@186f8716]" started-at="2022-10-17T11:01:26Z" name="afterClass" finished-at="2022-10-17T11:01:26Z" duration-ms="68" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.gigsberg.regression.Testcase_Concerts_Regression -->
-      <class name="com.gigsberg.regression.Testcase_Festivals_Regression">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:22Z" name="setup" finished-at="2022-10-17T11:02:25Z" duration-ms="3308" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_01_Festivals_United_Kingdom(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:25Z" name="TC_01_Festivals_United_Kingdom" finished-at="2022-10-17T11:02:31Z" duration-ms="5394" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Festivals_Regression.TC_01_Festivals_United_Kingdom(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Festivals_United_Kingdom -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:31Z" name="afterClass" finished-at="2022-10-17T11:02:31Z" duration-ms="70" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:31Z" name="setup" finished-at="2022-10-17T11:02:34Z" duration-ms="3290" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_02_Festivals_International_Festivals(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:34Z" name="TC_02_Festivals_International_Festivals" finished-at="2022-10-17T11:02:38Z" duration-ms="4128" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Festivals_Regression.TC_02_Festivals_International_Festivals(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Festivals_International_Festivals -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:38Z" name="afterClass" finished-at="2022-10-17T11:02:38Z" duration-ms="61" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:38Z" name="setup" finished-at="2022-10-17T11:02:42Z" duration-ms="3348" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_03_Festivals_Spain(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:42Z" name="TC_03_Festivals_Spain" finished-at="2022-10-17T11:02:45Z" duration-ms="3459" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Festivals_Regression.TC_03_Festivals_Spain(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Festivals_Spain -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:45Z" name="afterClass" finished-at="2022-10-17T11:02:45Z" duration-ms="64" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:45Z" name="setup" finished-at="2022-10-17T11:02:49Z" duration-ms="3352" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_04_Festivals_Australia(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:49Z" name="TC_04_Festivals_Australia" finished-at="2022-10-17T11:02:53Z" duration-ms="4135" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Festivals_Regression.TC_04_Festivals_Australia(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Festivals_Australia -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:53Z" name="afterClass" finished-at="2022-10-17T11:02:53Z" duration-ms="71" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:53Z" name="setup" finished-at="2022-10-17T11:02:56Z" duration-ms="3358" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_05_Festivals_Netherlands(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:56Z" name="TC_05_Festivals_Netherlands" finished-at="2022-10-17T11:02:56Z" duration-ms="0" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Festivals_Regression.TC_05_Festivals_Netherlands(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Festivals_Netherlands -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:56Z" name="afterClass" finished-at="2022-10-17T11:02:56Z" duration-ms="61" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:02:56Z" name="setup" finished-at="2022-10-17T11:03:00Z" duration-ms="3334" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_06_Festivals_All_Festivals(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:03:00Z" name="TC_06_Festivals_All_Festivals" finished-at="2022-10-17T11:03:00Z" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Festivals_Regression.TC_06_Festivals_All_Festivals(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_06_Festivals_All_Festivals -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Festivals_Regression@45ca843]" started-at="2022-10-17T11:03:00Z" name="afterClass" finished-at="2022-10-17T11:03:00Z" duration-ms="59" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.gigsberg.regression.Testcase_Festivals_Regression -->
-      <class name="com.gigsberg.regression.Testcase_Sports_Regression">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:26Z" name="setup" finished-at="2022-10-17T11:01:29Z" duration-ms="3338" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_01_Sports_Football(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:29Z" name="TC_01_Sports_Football" finished-at="2022-10-17T11:01:31Z" duration-ms="1722" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Sports_Regression.TC_01_Sports_Football(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Sports_Football -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:31Z" name="afterClass" finished-at="2022-10-17T11:01:31Z" duration-ms="63" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:31Z" name="setup" finished-at="2022-10-17T11:01:34Z" duration-ms="3347" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_02_Sports_Rugby(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:34Z" name="TC_02_Sports_Rugby" finished-at="2022-10-17T11:01:38Z" duration-ms="3867" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Sports_Regression.TC_02_Sports_Rugby(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Sports_Rugby -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:38Z" name="afterClass" finished-at="2022-10-17T11:01:38Z" duration-ms="63" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:38Z" name="setup" finished-at="2022-10-17T11:01:42Z" duration-ms="3671" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_03_Sports_Darts(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:42Z" name="TC_03_Sports_Darts" finished-at="2022-10-17T11:01:47Z" duration-ms="4823" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Sports_Regression.TC_03_Sports_Darts(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Sports_Darts -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:47Z" name="afterClass" finished-at="2022-10-17T11:01:47Z" duration-ms="66" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:47Z" name="setup" finished-at="2022-10-17T11:01:51Z" duration-ms="4111" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_04_Sports_Tennis(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:51Z" name="TC_04_Sports_Tennis" finished-at="2022-10-17T11:01:55Z" duration-ms="4082" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Sports_Regression.TC_04_Sports_Tennis(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Sports_Tennis -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:55Z" name="afterClass" finished-at="2022-10-17T11:01:55Z" duration-ms="70" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:55Z" name="setup" finished-at="2022-10-17T11:01:58Z" duration-ms="3265" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_05_Sports_American_Football(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:01:58Z" name="TC_05_Sports_American_Football" finished-at="2022-10-17T11:02:01Z" duration-ms="2514" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Sports_Regression.TC_05_Sports_American_Football(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Sports_American_Football -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:01Z" name="afterClass" finished-at="2022-10-17T11:02:01Z" duration-ms="64" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:01Z" name="setup" finished-at="2022-10-17T11:02:04Z" duration-ms="3380" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_06_Sports_WWE(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:04Z" name="TC_06_Sports_WWE" finished-at="2022-10-17T11:02:10Z" duration-ms="6237" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Sports_Regression.TC_06_Sports_WWE(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //h1[@class='concert_sub_title' and text()='WWE Tickets'] (tried for 5 second(s) with 500 milliseconds interval)]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //h1[@class='concert_sub_title' and text()='WWE Tickets'] (tried for 5 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at commons.BasePage.waitForElementVisible(BasePage.java:403)
-at pageObjects.HomePageObject.getConcertSubTitle(HomePageObject.java:27)
-at com.gigsberg.regression.Testcase_Sports_Regression.TC_06_Sports_WWE(Testcase_Sports_Regression.java:121)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-at org.testng.TestRunner.privateRun(TestRunner.java:648)
-at org.testng.TestRunner.run(TestRunner.java:505)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //h1[@class='concert_sub_title' and text()='WWE Tickets']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-9TSO38K', ip: '192.168.0.10', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 28 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_06_Sports_WWE -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:10Z" name="afterClass" finished-at="2022-10-17T11:02:11Z" duration-ms="69" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:11Z" name="setup" finished-at="2022-10-17T11:02:14Z" duration-ms="3468" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_07_Sports_LaLiga_Tickets(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:14Z" name="TC_07_Sports_LaLiga_Tickets" finished-at="2022-10-17T11:02:16Z" duration-ms="1670" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Sports_Regression.TC_07_Sports_LaLiga_Tickets(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_07_Sports_LaLiga_Tickets -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:16Z" name="afterClass" finished-at="2022-10-17T11:02:16Z" duration-ms="62" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:16Z" name="setup" finished-at="2022-10-17T11:02:19Z" duration-ms="3362" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_08_Sports_All_Sports(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:19Z" name="TC_08_Sports_All_Sports" finished-at="2022-10-17T11:02:22Z" duration-ms="2954" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Sports_Regression.TC_08_Sports_All_Sports(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_08_Sports_All_Sports -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Sports_Regression@1d8bd0de]" started-at="2022-10-17T11:02:22Z" name="afterClass" finished-at="2022-10-17T11:02:22Z" duration-ms="70" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.gigsberg.regression.Testcase_Sports_Regression -->
-      <class name="com.gigsberg.regression.Testcase_Theatre_Regression">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T10:59:59Z" name="setup" finished-at="2022-10-17T11:00:02Z" duration-ms="3823" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_01_Theatre_Comedy(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:02Z" name="TC_01_Theatre_Comedy" finished-at="2022-10-17T11:00:04Z" duration-ms="2080" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Theatre_Regression.TC_01_Theatre_Comedy(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_01_Theatre_Comedy -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:04Z" name="afterClass" finished-at="2022-10-17T11:00:05Z" duration-ms="72" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:05Z" name="setup" finished-at="2022-10-17T11:00:08Z" duration-ms="3417" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_02_Theatre_Ballet_Dance(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:08Z" name="TC_02_Theatre_Ballet_Dance" finished-at="2022-10-17T11:00:10Z" duration-ms="1706" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Theatre_Regression.TC_02_Theatre_Ballet_Dance(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_02_Theatre_Ballet_Dance -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:10Z" name="afterClass" finished-at="2022-10-17T11:00:10Z" duration-ms="62" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:10Z" name="setup" finished-at="2022-10-17T11:00:13Z" duration-ms="3350" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_03_Theatre_Classical(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:13Z" name="TC_03_Theatre_Classical" finished-at="2022-10-17T11:00:15Z" duration-ms="2165" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Theatre_Regression.TC_03_Theatre_Classical(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Theatre_Classical -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:15Z" name="afterClass" finished-at="2022-10-17T11:00:15Z" duration-ms="70" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:15Z" name="setup" finished-at="2022-10-17T11:00:19Z" duration-ms="3369" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_04_Theatre_Shows(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:19Z" name="TC_04_Theatre_Shows" finished-at="2022-10-17T11:00:21Z" duration-ms="2173" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Theatre_Regression.TC_04_Theatre_Shows(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Theatre_Shows -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:21Z" name="afterClass" finished-at="2022-10-17T11:00:21Z" duration-ms="49" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:21Z" name="setup" finished-at="2022-10-17T11:00:24Z" duration-ms="3305" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_05_Theatre_Conferences_Speaking_Tour(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:24Z" name="TC_05_Theatre_Conferences_Speaking_Tour" finished-at="2022-10-17T11:00:25Z" duration-ms="1106" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Theatre_Regression.TC_05_Theatre_Conferences_Speaking_Tour(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_05_Theatre_Conferences_Speaking_Tour -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:25Z" name="afterClass" finished-at="2022-10-17T11:00:25Z" duration-ms="75" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:25Z" name="setup" finished-at="2022-10-17T11:00:29Z" duration-ms="3264" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_06_Theatre_All_Theatre(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:29Z" name="TC_06_Theatre_All_Theatre" finished-at="2022-10-17T11:00:30Z" duration-ms="1059" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Theatre_Regression.TC_06_Theatre_All_Theatre(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_06_Theatre_All_Theatre -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Theatre_Regression@5ab9e72c]" started-at="2022-10-17T11:00:30Z" name="afterClass" finished-at="2022-10-17T11:00:30Z" duration-ms="63" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- afterClass -->
-      </class> <!-- com.gigsberg.regression.Testcase_Theatre_Regression -->
+      </class> <!-- com.gigsberg.regression.Testcase_Footer_Menu -->
     </test> <!-- Run on CHROME -->
   </suite> <!-- Gigsberg -->
 </testng-results>

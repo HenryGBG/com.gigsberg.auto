@@ -9,6 +9,8 @@ public class GlobalBaseUI {
 	public static final String DYNAMIC_SUB_CATEGORY_BY_LABEL = "xpath=//a[@class='header_subcategory ' and text()='%s']";
 	public static final String DYNAMIC_SUB_TITLE_BY_LABEL = "xpath=//h1[@class='concert_sub_title' and text()='%s']";
 	public static final String UPCOMING_CONCERT_ROCK = "xpath=//span[@class='upcomimg_concert_text']";
+	public static final String DYNAMIC_MENU_ON_FOOTER = "xpath=//a[@class='footer_menu_link' and @href='/%s']";
+	public static final String ACCEPT_COOKIE_XPATH = "xpath=//a[@class='btn accept_cookies_btn']";
 
 }
 //
