@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-17T12:48:22Z" name="Gigsberg" finished-at="2022-10-17T12:48:48Z" duration-ms="26581">
+  <suite started-at="2022-10-18T12:50:27Z" name="Gigsberg" finished-at="2022-10-18T12:50:31Z" duration-ms="4227">
     <groups>
     </groups>
-    <test started-at="2022-10-17T12:48:22Z" name="Run on CHROME" finished-at="2022-10-17T12:48:48Z" duration-ms="26581">
-      <class name="com.gigsberg.regression.Testcase_Footer_Menu">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:22Z" name="setup" finished-at="2022-10-17T12:48:28Z" duration-ms="6417" status="PASS">
+    <test started-at="2022-10-18T12:50:27Z" name="Run on CHROME" finished-at="2022-10-18T12:50:31Z" duration-ms="4227">
+      <class name="com.gigsberg.regression.Testcase_Account_Regression">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:27Z" name="setup" finished-at="2022-10-18T12:50:31Z" duration-ms="3804" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[h_chrome]]>
+                <![CDATA[chrome]]>
               </value>
             </param>
             <param index="1">
@@ -23,115 +23,157 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="TC_01_Footer_Menu_Help_Centre(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:28Z" name="TC_01_Footer_Menu_Help_Centre" finished-at="2022-10-17T12:48:30Z" duration-ms="1363" status="PASS">
+        <test-method signature="TC_01_Account_Sign_Up_With_Empty_Data(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_01_Account_Sign_Up_With_Empty_Data" finished-at="2022-10-18T12:50:31Z" duration-ms="403" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Footer_Menu.TC_01_Footer_Menu_Help_Centre(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_01_Account_Sign_Up_With_Empty_Data(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_01_Footer_Menu_Help_Centre -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:30Z" name="afterClass" finished-at="2022-10-17T12:48:30Z" duration-ms="78" status="PASS">
+        </test-method> <!-- TC_01_Account_Sign_Up_With_Empty_Data -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:30Z" name="setup" finished-at="2022-10-17T12:48:33Z" duration-ms="3290" status="PASS">
+        <test-method signature="TC_02_Account__Sign_Up_With_Invalid_Fullname(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_02_Account__Sign_Up_With_Invalid_Fullname" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_02_Account__Sign_Up_With_Invalid_Fullname(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_02_Footer_Menu_Terms_Conditions(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:33Z" name="TC_02_Footer_Menu_Terms_Conditions" finished-at="2022-10-17T12:48:34Z" duration-ms="1314" status="PASS">
+        </test-method> <!-- TC_02_Account__Sign_Up_With_Invalid_Fullname -->
+        <test-method signature="TC_03_Account_Sign_Up_With_Invalid_Email(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_03_Account_Sign_Up_With_Invalid_Email" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Footer_Menu.TC_02_Footer_Menu_Terms_Conditions(java.lang.reflect.Method)]]>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_03_Account_Sign_Up_With_Invalid_Email(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC_02_Footer_Menu_Terms_Conditions -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:34Z" name="afterClass" finished-at="2022-10-17T12:48:34Z" duration-ms="64" status="PASS">
+        </test-method> <!-- TC_03_Account_Sign_Up_With_Invalid_Email -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:34Z" name="setup" finished-at="2022-10-17T12:48:38Z" duration-ms="3451" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_03_Footer_Menu_Contact_Us(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:38Z" name="TC_03_Footer_Menu_Contact_Us" finished-at="2022-10-17T12:48:39Z" duration-ms="1297" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Footer_Menu.TC_03_Footer_Menu_Contact_Us(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_03_Footer_Menu_Contact_Us -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:39Z" name="afterClass" finished-at="2022-10-17T12:48:39Z" duration-ms="71" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:39Z" name="setup" finished-at="2022-10-17T12:48:46Z" duration-ms="6370" status="PASS">
+        <test-method signature="TC_04_Account_Sign_Up_With_Invalid_Password(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_04_Account_Sign_Up_With_Invalid_Password" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[h_chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[https://gigsberg.com/]]>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_04_Account_Sign_Up_With_Invalid_Password(java.lang.reflect.Method)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="TC_04_Footer_Menu_Privacy_Policy(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:46Z" name="TC_04_Footer_Menu_Privacy_Policy" finished-at="2022-10-17T12:48:48Z" duration-ms="2804" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[public void com.gigsberg.regression.Testcase_Footer_Menu.TC_04_Footer_Menu_Privacy_Policy(java.lang.reflect.Method)]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_04_Footer_Menu_Privacy_Policy -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Footer_Menu@17a7f733]" started-at="2022-10-17T12:48:48Z" name="afterClass" finished-at="2022-10-17T12:48:48Z" duration-ms="45" status="PASS">
+        </test-method> <!-- TC_04_Account_Sign_Up_With_Invalid_Password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.gigsberg.regression.Testcase_Footer_Menu -->
+        <test-method signature="TC_05_Account_Sign_Up_With_Valid_Data(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_05_Account_Sign_Up_With_Valid_Data" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_05_Account_Sign_Up_With_Valid_Data(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_05_Account_Sign_Up_With_Valid_Data -->
+        <test-method signature="TC_06_Account_Login_With_Empty_Data(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_06_Account_Login_With_Empty_Data" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_06_Account_Login_With_Empty_Data(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_06_Account_Login_With_Empty_Data -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="TC_07_Account_Login_With_Invalid_Email_Invalid_Password(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_07_Account_Login_With_Invalid_Email_Invalid_Password" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_07_Account_Login_With_Invalid_Email_Invalid_Password(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_07_Account_Login_With_Invalid_Email_Invalid_Password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="TC_08_Account_Login_With_Invalid_Email_Valid_Password(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_08_Account_Login_With_Invalid_Email_Valid_Password" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_08_Account_Login_With_Invalid_Email_Valid_Password(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_08_Account_Login_With_Invalid_Email_Valid_Password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="TC_09_Account_Login_With_Valid_Email_Invalid_Password(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_09_Account_Login_With_Valid_Email_Invalid_Password" finished-at="2022-10-18T12:50:31Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_09_Account_Login_With_Valid_Email_Invalid_Password(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_09_Account_Login_With_Valid_Email_Invalid_Password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method signature="TC_10_Account_Login_With_Valid_Email_Valid_Password(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="TC_10_Account_Login_With_Valid_Email_Valid_Password" finished-at="2022-10-18T12:50:31Z" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.gigsberg.regression.Testcase_Account_Regression.TC_10_Account_Login_With_Valid_Email_Valid_Password(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_10_Account_Login_With_Valid_Email_Valid_Password -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.regression.Testcase_Account_Regression@fa36558]" started-at="2022-10-18T12:50:31Z" name="afterClass" finished-at="2022-10-18T12:50:31Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.gigsberg.regression.Testcase_Account_Regression -->
     </test> <!-- Run on CHROME -->
   </suite> <!-- Gigsberg -->
 </testng-results>

@@ -8,13 +8,13 @@
   <test thread-count="5" name="Run on CHROME(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.gigsberg.regression.Testcase_Footer_Menu">
+      <class name="com.gigsberg.regression.Testcase_Account_Regression">
         <methods>
-          <include name="afterClass"/>
-          <include name="TC_02_Footer_Menu_Terms_Conditions" invocation-numbers="0"/>
+          <include name="TC_01_Account_Sign_Up_With_Empty_Data" invocation-numbers="0"/>
           <include name="setup"/>
+          <include name="afterClass"/>
         </methods>
-      </class> <!-- com.gigsberg.regression.Testcase_Footer_Menu -->
+      </class> <!-- com.gigsberg.regression.Testcase_Account_Regression -->
     </classes>
   </test> <!-- Run on CHROME(failed) -->
 </suite> <!-- Failed suite [Gigsberg] -->
