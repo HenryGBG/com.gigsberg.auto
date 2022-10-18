@@ -13,6 +13,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
@@ -64,6 +65,11 @@ public class BaseTest {
 	public static int generateFakeNumber() {
 		Random rand = new Random();
 		return rand.nextInt(999);
+	}
+
+	@AfterMethod(alwaysRun = true)
+	public void afterClass() {
+//		driver.quit();
 	}
 
 }

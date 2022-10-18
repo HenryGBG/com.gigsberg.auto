@@ -27,11 +27,6 @@ public class Testcase_Theatre_Regression extends BaseTest {
 		driver = getBrowserDriver(browserName, appUrl);
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public void afterClass() {
-		driver.quit();
-	}
-
 	@Test
 	public void TC_01_Theatre_Comedy(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Theatre Items");

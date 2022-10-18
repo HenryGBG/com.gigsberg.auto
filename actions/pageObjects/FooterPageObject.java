@@ -48,4 +48,9 @@ public class FooterPageObject extends BasePage {
 		return getElementText(driver, FooterPageUIs.DISTRIBUTOR_AGREEMENT_TITLE_IN_ENGLISH);
 	}
 
+	public String getEventOrganizersEnglish() {
+		waitForElementVisible(driver, FooterPageUIs.EVENT_ORGANIZERS_TITLE_IN_ENGLISH);
+		return getElementText(driver, FooterPageUIs.EVENT_ORGANIZERS_TITLE_IN_ENGLISH);
+	}
+
 }

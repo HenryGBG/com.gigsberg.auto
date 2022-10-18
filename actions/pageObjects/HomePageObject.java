@@ -42,4 +42,35 @@ public class HomePageObject extends BasePage {
 		waitForElementVisible(driver, GlobalBaseUI.ACCEPT_COOKIE_XPATH);
 		clickToElement(driver, GlobalBaseUI.ACCEPT_COOKIE_XPATH);
 	}
+
+	public void clickToLoginLink() {
+		waitForElementVisible(driver, GlobalBaseUI.LOGIN_LINK_XPATH);
+		clickToElement(driver, GlobalBaseUI.LOGIN_LINK_XPATH);
+	}
+
+	public void clickToSignUpButtonAtLoginForm() {
+		waitForElementVisible(driver, GlobalBaseUI.SIGN_UP_BUTTON_XPATH);
+		clickToElement(driver, GlobalBaseUI.SIGN_UP_BUTTON_XPATH);
+	}
+
+	public String getErrorMessageAtEmailTextbox() {
+		waitForElementVisible(driver, GlobalBaseUI.ERROR_MESSAGE_AT_EMAIL_TEXTBOX_XPATH);
+		return getElementText(driver, GlobalBaseUI.ERROR_MESSAGE_AT_EMAIL_TEXTBOX_XPATH);
+	}
+
+	public String getErrorMessageAtPasswordTextbox() {
+		waitForElementVisible(driver, GlobalBaseUI.ERROR_MESSAGE_AT_PASSWORD_TEXTBOX_XPATH);
+		return getElementText(driver, GlobalBaseUI.ERROR_MESSAGE_AT_PASSWORD_TEXTBOX_XPATH);
+	}
+
+	public String getErrorMessageAtFullnameTextbox() {
+		waitForElementVisible(driver, GlobalBaseUI.ERROR_MESSAGE_AT_FULLNAME_TEXTBOX_XPATH);
+		return getElementText(driver, GlobalBaseUI.ERROR_MESSAGE_AT_FULLNAME_TEXTBOX_XPATH);
+
+	}
+
+	public void clickToSignUpButtonAtSignUpForm() {
+		waitForElementVisible(driver, GlobalBaseUI.SIGN_UP_BUTTON_AT_SIGNUP_FORM_XPATH);
+		clickToElement(driver, GlobalBaseUI.SIGN_UP_BUTTON_AT_SIGNUP_FORM_XPATH);
+	}
 }

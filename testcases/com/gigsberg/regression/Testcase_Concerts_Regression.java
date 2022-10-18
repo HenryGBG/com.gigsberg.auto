@@ -27,11 +27,6 @@ public class Testcase_Concerts_Regression extends BaseTest {
 		driver = getBrowserDriver(browserName, appUrl);
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public void afterClass() {
-		driver.quit();
-	}
-
 	@Test
 	public void TC_01_Concerts_Rock(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Concerts Items");

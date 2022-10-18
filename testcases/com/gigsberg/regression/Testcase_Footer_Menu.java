@@ -30,11 +30,6 @@ public class Testcase_Footer_Menu extends BaseTest {
 		driver = getBrowserDriver(browserName, appUrl);
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public void afterClass() {
-		driver.quit();
-	}
-
 	@Test
 	public void TC_01_Footer_Menu_Help_Centre(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Footer Menu");
@@ -136,7 +131,7 @@ public class Testcase_Footer_Menu extends BaseTest {
 		Assert.assertEquals(footerPage.getStudentDiscountInEnglish(), FooterPageUIs.STUDENT_DISCOUNT_LABEL_IN_ENGLISH);
 	}
 
-//	@Test
+	@Test
 	public void TC_07_Footer_Menu_Blog(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Footer Menu");
 
@@ -171,7 +166,20 @@ public class Testcase_Footer_Menu extends BaseTest {
 				FooterPageUIs.DISTRIBUTOR_AGREEMENT_LABEL_IN_ENGLISH);
 	}
 
-//	@Test
-//	public void TC_09_Footer_Menu_Event_Organizers(Method method) {
-//	}
+	@Test
+	public void TC_09_Footer_Menu_Event_Organizers(Method method) {
+		ExtentTestManager.startTest(method.getName(), "Footer Menu");
+
+		ExtentTestManager.getTest().log(Status.INFO, "Footer - Step 00: Navigate to 'https://gigsberg.com/'");
+		homePage = PageGenerateManager.getHomePage(driver);
+
+		homePage.acceptGBGCookies();
+
+		ExtentTestManager.getTest().log(Status.INFO, "Footer - Step 01: Click to 'Event Organizers' link on Footer");
+		footerPage = homePage.clickToMenuByHref("event-organizers");
+
+		ExtentTestManager.getTest().log(Status.INFO,
+				"Footer - Step 02: Verify the title 'Event Organizers' displayed ");
+		Assert.assertEquals(footerPage.getEventOrganizersEnglish(), FooterPageUIs.EVENT_ORGANIZERS_LABEL_IN_ENGLISH);
+	}
 }

@@ -16,5 +16,7 @@ public class FooterPageUIs {
 	public static final String STUDENT_DISCOUNT_TITLE_IN_ENGLISH = "xpath=//h1[@class='terms_main_title']//h1[@class='student_discount_header_title']";
 	public static final String DISTRIBUTOR_AGREEMENT_TITLE_IN_ENGLISH = "xpath=//h1[@class='terms_main_title']";
 	public static final String DISTRIBUTOR_AGREEMENT_LABEL_IN_ENGLISH = "Distributor Agreement";
+	public static final String EVENT_ORGANIZERS_TITLE_IN_ENGLISH = "xpath=//h1[@class='contact_header_title']";
+	public static final String EVENT_ORGANIZERS_LABEL_IN_ENGLISH = "Event Organizers Contact Page";
 
 }

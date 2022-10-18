@@ -27,11 +27,6 @@ public class Testcase_Festivals_Regression extends BaseTest {
 		driver = getBrowserDriver(browserName, appUrl);
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public void afterClass() {
-		driver.quit();
-	}
-
 	@Test
 	public void TC_01_Festivals_United_Kingdom(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Festivals Items");

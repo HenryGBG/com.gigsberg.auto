@@ -3,13 +3,10 @@
 		<listener class-name="reportConfig.ExtentTestListener" />
 	</listeners>
 	<parameter name="url" value="https://gigsberg.com/" />
-
 	<test name="Run on CHROME">
-		<parameter name="browser" value="h_chrome" />
+		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.gigsberg.regression.Testcase_Footer_Menu" />
-
+			<class name="com.gigsberg.regression.Testcase_Account_Regression" />
 		</classes>
 	</test>
-
 </suite> <!-- Suite -->

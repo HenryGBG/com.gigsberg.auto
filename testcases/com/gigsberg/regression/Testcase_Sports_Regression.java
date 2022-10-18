@@ -27,11 +27,6 @@ public class Testcase_Sports_Regression extends BaseTest {
 		driver = getBrowserDriver(browserName, appUrl);
 	}
 
-	@AfterMethod(alwaysRun = true)
-	public void afterClass() {
-		driver.quit();
-	}
-
 	@Test
 	public void TC_01_Sports_Football(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Sports Items");
