@@ -67,9 +67,17 @@ public class BaseTest {
 		return rand.nextInt(999);
 	}
 
+	public void sleepInSecond(long timeInSecond) {
+		try {
+			Thread.sleep(timeInSecond * 1000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
+
 	@AfterMethod(alwaysRun = true)
 	public void afterClass() {
-//		driver.quit();
+		driver.quit();
 	}
 
 }

@@ -2,7 +2,7 @@
 	<listeners>
 		<listener class-name="reportConfig.ExtentTestListener" />
 	</listeners>
-	<parameter name="url" value="https://gigsberg.com/" />
+	<parameter name="url" value="https://stage.gigsberg.com/" />
 
 	<test name="Run on CHROME">
 		<parameter name="browser" value="h_chrome" />

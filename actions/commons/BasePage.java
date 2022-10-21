@@ -508,8 +508,8 @@ public class BasePage {
 	 * @param itemValue
 	 */
 	public void selectToDropdownByName(WebDriver driver, String dropdownAttributeName, String itemValue) {
-		waitForElementClickable(driver, GlobalConstants.DYNAMIC_DROPDOWN_BY_NAME, dropdownAttributeName);
-		selectItemInDefaultDropdown(driver, GlobalConstants.DYNAMIC_DROPDOWN_BY_NAME, itemValue, dropdownAttributeName);
+		waitForElementClickable(driver, GlobalBaseUI.DYNAMIC_DROPDOWN_BY_NAME, dropdownAttributeName);
+		selectItemInDefaultDropdown(driver, GlobalBaseUI.DYNAMIC_DROPDOWN_BY_NAME, itemValue, dropdownAttributeName);
 	}
 
 	/**
@@ -519,8 +519,8 @@ public class BasePage {
 	 * @param radioButtonByLabelName
 	 */
 	public void clickToRadioButtonByLabel(WebDriver driver, String radioButtonByLabelName) {
-		waitForElementClickable(driver, GlobalConstants.DYNAMIC_RADIO_BUTTON_BY_VALUE, radioButtonByLabelName);
-		checkToDefaultCheckboxOrRadio(driver, GlobalConstants.DYNAMIC_RADIO_BUTTON_BY_VALUE, radioButtonByLabelName);
+		waitForElementClickable(driver, GlobalBaseUI.DYNAMIC_RADIO_BUTTON_BY_VALUE, radioButtonByLabelName);
+		checkToDefaultCheckboxOrRadio(driver, GlobalBaseUI.DYNAMIC_RADIO_BUTTON_BY_VALUE, radioButtonByLabelName);
 	}
 
 	/**
@@ -530,8 +530,8 @@ public class BasePage {
 	 * @param checkboxLabelName
 	 */
 	public void clickToCheckboxByLabel(WebDriver driver, String checkboxLabelName) {
-		waitForElementClickable(driver, GlobalConstants.DYNAMIC_CHECKBOX_BY_LABEL, checkboxLabelName);
-		checkToDefaultCheckboxOrRadio(driver, GlobalConstants.DYNAMIC_CHECKBOX_BY_LABEL, checkboxLabelName);
+		waitForElementClickable(driver, GlobalBaseUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxLabelName);
+		checkToDefaultCheckboxOrRadio(driver, GlobalBaseUI.DYNAMIC_CHECKBOX_BY_LABEL, checkboxLabelName);
 	}
 
 	/*

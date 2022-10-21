@@ -1,0 +1,36 @@
+[
+	{
+		"firstName": "Henry",
+		"lastName": "Testing",
+		"age": 35,
+		"emailAddress": "henry@gmail.com",
+		"address": {
+			"streetAddress": "Nguyen Luong Bang",
+			"city": "Ho Chi Minh",
+			"postCode": "73000",
+			"state": "Quan 7",
+			"country": "VietNam"
+		},
+		"phoneNumber": {
+			"home": "012345678",
+			"mobile": "0987654321"
+		}
+	},
+	{
+		"firstName": "Testing",
+		"lastName": "Nguyen",
+		"age": 33,
+		"emailAddress": "testing@gmail.com",
+		"address": {
+			"streetAddress": "Nguyen Van Cu",
+			"city": "Ho Chi Minh City",
+			"postCode": "75000",
+			"state": "Quan 8",
+			"country": "VietNam"
+		},
+		"phoneNumber": {
+			"home": "012345678",
+			"mobile": "0987654321"
+		}
+	}
+]

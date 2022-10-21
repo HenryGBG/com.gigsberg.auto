@@ -1,0 +1,21 @@
+{
+	"userLogins": [
+		{
+			"username": "testing002@gmail.com",
+			"password": "Pass@132456",
+			"fullname": "Tester Nguyen"
+		},
+		{
+			"phone": [
+				{
+					"type": "home",
+					"number": "89749000000000"
+				},
+				{
+					"type": "office",
+					"number": "89749000000000"
+				}
+			]
+		}
+	]
+}

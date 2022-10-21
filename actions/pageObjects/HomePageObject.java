@@ -73,4 +73,47 @@ public class HomePageObject extends BasePage {
 		waitForElementVisible(driver, GlobalBaseUI.SIGN_UP_BUTTON_AT_SIGNUP_FORM_XPATH);
 		clickToElement(driver, GlobalBaseUI.SIGN_UP_BUTTON_AT_SIGNUP_FORM_XPATH);
 	}
+
+	public void inputToFullnameTextbox(String fullName) {
+		waitForElementVisible(driver, GlobalBaseUI.FULLNAME_TEXTBOX_XPATH);
+		sendkeyToElement(driver, GlobalBaseUI.FULLNAME_TEXTBOX_XPATH, fullName);
+	}
+
+	public void inputToEmailTextbox(String validEmail) {
+		waitForElementVisible(driver, GlobalBaseUI.EMAIL_TEXTBOX_XPATH);
+		sendkeyToElement(driver, GlobalBaseUI.EMAIL_TEXTBOX_XPATH, validEmail);
+
+	}
+
+	public void inputToPasswordTextbox(String password) {
+		waitForElementVisible(driver, GlobalBaseUI.PASSWORD_TEXTBOX_XPATH);
+		sendkeyToElement(driver, GlobalBaseUI.PASSWORD_TEXTBOX_XPATH, password);
+	}
+
+	public boolean getFullnameDisplay(String fullname) {
+		waitForElementVisible(driver, GlobalBaseUI.FULLNAME_AT_ACCOUNT_HEADER, fullname);
+		return isElementDisplayed(driver, GlobalBaseUI.FULLNAME_AT_ACCOUNT_HEADER, fullname);
+	}
+
+	public String getExistingErrorMessageAtEmailTextbox() {
+		waitForElementVisible(driver, GlobalBaseUI.EXISTING_ERROR_MESSAGE_AT_EMAIL_XPATH);
+		return getElementText(driver, GlobalBaseUI.EXISTING_ERROR_MESSAGE_AT_EMAIL_XPATH);
+
+	}
+
+	public void clickToLoginBubton() {
+		waitForElementVisible(driver, GlobalBaseUI.LOGIN_BUTTON_XPATH);
+		clickToElement(driver, GlobalBaseUI.LOGIN_BUTTON_XPATH);
+	}
+
+	public String getErrorMessageAtEmailAtLoginForm() {
+		waitForElementVisible(driver, GlobalBaseUI.ERROR_MESSAGE_EMAIL_AT_LOGIN_FORM_XPATH);
+		return getElementText(driver, GlobalBaseUI.ERROR_MESSAGE_EMAIL_AT_LOGIN_FORM_XPATH);
+	}
+
+	public String getErrorMessageAtPasswordatLoginForm() {
+		waitForElementVisible(driver, GlobalBaseUI.ERROR_MESSAGE_PASSWORD_AT_LOGIN_FORM_XPATH);
+		return getElementText(driver, GlobalBaseUI.ERROR_MESSAGE_PASSWORD_AT_LOGIN_FORM_XPATH);
+	}
+
 }
