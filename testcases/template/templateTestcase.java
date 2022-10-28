@@ -13,7 +13,7 @@ import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.PageGenerateManager;
-import pageObjects.HomePageObject;
+import pageObjects.Gigbergs.HomePageObject;
 import reportConfig.ExtentTestManager;
 
 public class templateTestcase extends BaseTest {

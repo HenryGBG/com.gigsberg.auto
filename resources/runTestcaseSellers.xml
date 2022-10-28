@@ -1,0 +1,14 @@
+<suite name="Gigsberg" parallel="false" thread-count="5">
+	<listeners>
+		<listener class-name="reportConfig.ExtentTestListener" />
+	</listeners>
+	<parameter name="url" value="https://stage.gigsberg.com/sellers/accounts" />
+
+	<test name="Run on CHROME">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.gigsberg.sellers.Testcase_Sellers_New_Listing" />
+
+		</classes>
+	</test>
+</suite> <!-- Suite -->

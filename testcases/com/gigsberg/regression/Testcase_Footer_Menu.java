@@ -14,8 +14,8 @@ import com.aventstack.extentreports.Status;
 
 import commons.BaseTest;
 import commons.PageGenerateManager;
-import pageObjects.FooterPageObject;
-import pageObjects.HomePageObject;
+import pageObjects.Gigbergs.FooterPageObject;
+import pageObjects.Gigbergs.HomePageObject;
 import pageUIs.com.gigsberg.FooterPageUIs;
 import reportConfig.ExtentTestManager;
 

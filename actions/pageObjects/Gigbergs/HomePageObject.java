@@ -1,4 +1,4 @@
-package pageObjects;
+package pageObjects.Gigbergs;
 
 import org.openqa.selenium.WebDriver;
 

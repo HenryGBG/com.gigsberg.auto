@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Gigsberg" class="navigator-link">
-              <span class="suite-name border-passed">Gigsberg</span>
+              <span class="suite-name border-failed">Gigsberg</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Gigsberg" class="navigator-link ">
-                    <span>C:\eclipse-java-2022-03-R-win32-x86_64\com.gigsberg.auto\resources\runSingleTest.xml</span>
+                    <span>C:\eclipse-java-2022-03-R-win32-x86_64\com.gigsberg.auto\resources\runTestcaseSellers.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">0 methods,   </span>
+                    <span class="method-stats">1 method, 1 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Gigsberg" class="hide-methods failed suite-Gigsberg"> (hide)</a> <!-- hide-methods failed suite-Gigsberg -->
+                      <a href="#" panel-name="suite-Gigsberg" class="show-methods failed suite-Gigsberg"> (show)</a> <!-- show-methods failed suite-Gigsberg -->
+                    </span>
+                    <div class="method-list-content failed suite-Gigsberg">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Gigsberg" title="com.gigsberg.sellers.Testcase_Sellers_New_Listing" class="method navigator-link" hash-for-method="Voucher_TC001_Buy_With_Empty_Data(public void com.gigsberg.sellers.Testcase_Sellers_New_Listing.Voucher_TC001_Buy_With_Empty_Data(java...)">Voucher_TC001_Buy_With_Empty_Data(public void com.gigsberg.sellers.Testcase_Sellers_New_Listing.Voucher_TC001_Buy_With_Empty_Data(java...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Gigsberg -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -103,29 +117,61 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Gigsberg" class="panel Gigsberg">
+          <div class="suite-Gigsberg-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.gigsberg.sellers.Testcase_Sellers_New_Listing</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Voucher_TC001_Buy_With_Empty_Data(public void com.gigsberg.sellers.Testcase_Sellers_New_Listing.Voucher_TC001_Buy_With_Empty_Data(java...)">
+                  </a> <!-- Voucher_TC001_Buy_With_Empty_Data(public void com.gigsberg.sellers.Testcase_Sellers_New_Listing.Voucher_TC001_Buy_With_Empty_Data(java...) -->
+                  <span class="method-name">Voucher_TC001_Buy_With_Empty_Data</span>
+                  <span class="parameters">(public void com.gigsberg.sellers.Testcase_Sellers_New_Listing.Voucher_TC001_Buy_With_Empty_Data(java.lang.reflect.Method))</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class=&apos;type_ticket_opt clearfix&apos;]/li/label[text()=&apos;%s&apos;] (tried for 5 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+	at commons.BasePage.waitForElementVisible(BasePage.java:403)
+	at pageObjects.GigsbergSellers.SellersDashboardPageObject.selectTicketType(SellersDashboardPageObject.java:47)
+	at com.gigsberg.sellers.Testcase_Sellers_New_Listing.Voucher_TC001_Buy_With_Empty_Data(Testcase_Sellers_New_Listing.java:52)
+Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //ul[@class=&apos;type_ticket_opt clearfix&apos;]/li/label[text()=&apos;%s&apos;]
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-9TSO38K&apos;, ip: &apos;192.168.0.9&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: driver.version: unknown
+	at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
+	at java.base/java.util.Optional.orElseThrow(Optional.java:403)
+	at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
+	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
+	at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
+	... 28 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Gigsberg-class-failed -->
         </div> <!-- panel Gigsberg -->
         <div panel-name="test-xml-Gigsberg" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\eclipse-java-2022-03-R-win32-x86_64\com.gigsberg.auto\resources\runSingleTest.xml</span>
+            <span class="header-content">C:\eclipse-java-2022-03-R-win32-x86_64\com.gigsberg.auto\resources\runTestcaseSellers.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Gigsberg&quot;&gt;
-  &lt;parameter name=&quot;url&quot; value=&quot;https://stage.gigsberg.com/&quot;/&gt;
+  &lt;parameter name=&quot;url&quot; value=&quot;https://stage.gigsberg.com/sellers/accounts&quot;/&gt;
   &lt;listeners&gt;
     &lt;listener class-name=&quot;reportConfig.ExtentTestListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Run on CHROME&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
-    &lt;groups&gt;
-      &lt;run&gt;
-        &lt;include name=&quot;SmokeTest&quot;/&gt;
-      &lt;/run&gt;
-    &lt;/groups&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.gigsberg.regression.Testcase_Concerts_Regression&quot;/&gt;
+      &lt;class name=&quot;com.gigsberg.sellers.Testcase_Sellers_New_Listing&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Run on CHROME --&gt;
 &lt;/suite&gt; &lt;!-- Gigsberg --&gt;
@@ -165,11 +211,16 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(0);
+data.addRows(1);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'Voucher_TC001_Buy_With_Empty_Data')
+data.setCell(0, 2, 'com.gigsberg.sellers.Testcase_Sellers_New_Listing')
+data.setCell(0, 3, 12950);
 window.suiteTableData['Gigsberg']= { tableData: data, tableDiv: 'times-div-Gigsberg'}
 return data;
 }
               </script>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-Gigsberg">
               </div> <!-- times-div-Gigsberg -->
             </div> <!-- times-div -->
@@ -184,32 +235,9 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Gigsberg" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">9 ignored methods</span>
+            <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.gigsberg.regression.Testcase_Concerts_Regression</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">TC_04_Concerts_HardRockMetal</span>
-                <br/>
-                <span class="ignored-method-name">TC_01_Concerts_Rock</span>
-                <br/>
-                <span class="ignored-method-name">TC_07_Concerts_Alternative_Indie</span>
-                <br/>
-                <span class="ignored-method-name">TC_02_Concerts_Pop</span>
-                <br/>
-                <span class="ignored-method-name">TC_05_Concerts_Rap</span>
-                <br/>
-                <span class="ignored-method-name">TC_06_Concerts_HipHopReggae</span>
-                <br/>
-                <span class="ignored-method-name">TC_09_Concerts_Rock_And_Pop</span>
-                <br/>
-                <span class="ignored-method-name">TC_03_Concerts_R_and_B</span>
-                <br/>
-                <span class="ignored-method-name">TC_08_Concerts_All_Concerts</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Gigsberg" class="panel">
@@ -217,6 +245,22 @@ return data;
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.gigsberg.sellers.Testcase_Sellers_New_Listing</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup(chrome, https://stage.gigsberg.com/sellers/accounts)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Voucher_TC001_Buy_With_Empty_Data(public void com.gigsberg.sellers.Testcase_Sellers_New_Listing.Voucher_TC001_Buy_With_Empty_Data(java...)</span>
+                <span class="method-start">2457 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterClass</span>
+                <span class="method-start">15609 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

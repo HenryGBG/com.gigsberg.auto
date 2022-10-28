@@ -218,7 +218,7 @@ public class BasePage {
 
 	public void selectItemInCustomDropdown(WebDriver driver, String parentlocatorType, String childItemlocatorType,
 			String expectedItem) {
-//		getWebElement(driver, parentlocatorType).click();
+		getWebElement(driver, parentlocatorType).click();
 		sleepInSecond(1);
 		WebDriverWait explicitWait = new WebDriverWait(driver, 20);
 		List<WebElement> allItems = explicitWait
@@ -394,6 +394,11 @@ public class BasePage {
 	}
 
 	public void String(WebDriver driver, String locatorType) {
+		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
+		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getBylocator(locatorType)));
+	}
+
+	public void waitForElementVisible(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.visibilityOfElementLocated(getBylocator(locatorType)));
 	}
@@ -579,7 +584,8 @@ public class BasePage {
 			System.out.println("Product name ở trên UI:" + productName.getText());
 		}
 
-		// Tạo ra 1 ArrayList mới để sort dữ liệu trong ArrayList cũ xem đúng hay ko
+		// Tạo ra 1 ArrayList mới để sort dữ liệu trong ArrayList cũ xem
+		// đúng hay ko
 		ArrayList<String> productSortList = new ArrayList<>();
 		for (String product : productUIList) {
 			productSortList.add(product);
@@ -610,7 +616,8 @@ public class BasePage {
 			System.out.println("Product Price trên UI: " + productPrice.getText());
 		}
 
-		// Tạo 1 ArrayList mới để sort dữ liệu trong ArrayList cũ xem đúng hay không
+		// Tạo 1 ArrayList mới để sort dữ liệu trong ArrayList cũ xem đúng
+		// hay không
 		ArrayList<Float> productSortList = new ArrayList<Float>();
 		for (Float product : productUIList) {
 			productSortList.add(product);
@@ -641,7 +648,8 @@ public class BasePage {
 			System.out.println("Product Price trên UI: " + productPrice.getText());
 		}
 
-		// Tạo 1 ArrayList mới để sort dữ liệu trong ArrayList cũ xem đúng hay không
+		// Tạo 1 ArrayList mới để sort dữ liệu trong ArrayList cũ xem đúng
+		// hay không
 		ArrayList<Float> productSortList = new ArrayList<Float>();
 		for (Float product : productUIList) {
 			productSortList.add(product);

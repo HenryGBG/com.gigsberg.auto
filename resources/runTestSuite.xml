@@ -1,10 +1,10 @@
-<suite name="Gigsberg" parallel="true" thread-count="5">
+<suite name="Gigsberg" parallel="methods" thread-count="3">
 	<listeners>
 		<listener class-name="reportConfig.ExtentTestListener" />
 	</listeners>
 	<parameter name="url" value="https://stage.gigsberg.com/" />
 	<test name="Run on CHROME">
-		<parameter name="browser" value="chrome" />
+		<parameter name="browser" value="h_chrome" />
 		<packages>
 			<package name="com.gigsberg.regression" />
 		</packages>

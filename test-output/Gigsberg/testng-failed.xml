@@ -1,21 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Gigsberg]">
-  <parameter name="url" value="https://stage.gigsberg.com/"/>
+  <parameter name="url" value="https://stage.gigsberg.com/sellers/accounts"/>
   <listeners>
     <listener class-name="reportConfig.ExtentTestListener"/>
   </listeners>
   <test thread-count="5" name="Run on CHROME(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.gigsberg.regression.Testcase_Concerts_Regression">
+      <class name="com.gigsberg.sellers.Testcase_Sellers_New_Listing">
         <methods>
-          <include name="TC_07_Concerts_Alternative_Indie" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="TC_03_Concerts_R_and_B" invocation-numbers="0"/>
           <include name="afterClass"/>
+          <include name="Voucher_TC001_Buy_With_Empty_Data" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.gigsberg.regression.Testcase_Concerts_Regression -->
+      </class> <!-- com.gigsberg.sellers.Testcase_Sellers_New_Listing -->
     </classes>
   </test> <!-- Run on CHROME(failed) -->
 </suite> <!-- Failed suite [Gigsberg] -->

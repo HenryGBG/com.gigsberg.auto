@@ -2,9 +2,6 @@ package commons;
 
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.commons.logging.Log;
-import org.apache.commons.logging.LogFactory;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -12,20 +9,24 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.firefox.FirefoxOptions;
 import org.openqa.selenium.opera.OperaDriver;
-import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import pageObjects.HomePageObject;
 
 public class BaseTest {
 	WebDriver driver;
 
 	public WebDriver getDriverInstance() {
 		return this.driver;
+	}
+
+
+
+	@AfterMethod(alwaysRun = true)
+	public void afterClass() {
+		driver.quit();
 	}
 
 	protected WebDriver getBrowserDriver(String browserName, String appUrl) {
@@ -73,11 +74,6 @@ public class BaseTest {
 		} catch (InterruptedException e) {
 			e.printStackTrace();
 		}
-	}
-
-	@AfterMethod(alwaysRun = true)
-	public void afterClass() {
-		driver.quit();
 	}
 
 }
