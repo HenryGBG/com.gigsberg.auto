@@ -44,7 +44,7 @@ public class SellersDashboardPageObject extends BasePage {
 	}
 
 	public void selectTicketType(String ticketType) {
-		waitForElementVisible(driver, SellersDashboardPageUIs.TICKET_TYPE_CHECKBOX);
+		waitForElementVisible(driver, SellersDashboardPageUIs.TICKET_TYPE_CHECKBOX, ticketType);
 		clickToElement(driver, SellersDashboardPageUIs.TICKET_TYPE_CHECKBOX, ticketType);
 	}
 

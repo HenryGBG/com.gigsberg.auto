@@ -49,7 +49,7 @@ public class Testcase_Sellers_New_Listing extends BaseTest {
 		// Ticket details form
 		sellersDashboardPage.selectNumberTicket("3");
 		sellersDashboardPage.selectSplitType("None");
-		sellersDashboardPage.selectTicketType("E-Ticket");
+		sellersDashboardPage.selectTicketType("Paper Ticket");
 		sellersDashboardPage.selectCategoryDetails("Floor");
 		sellersDashboardPage.selectBlockDetails("Floor");
 		sellersDashboardPage.setYourPriceCurrency("Euro");

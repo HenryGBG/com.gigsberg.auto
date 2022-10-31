@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-10-28T12:46:27Z" name="Gigsberg" finished-at="2022-10-28T12:46:43Z" duration-ms="15721">
+  <suite started-at="2022-10-31T06:41:23Z" name="Gigsberg" finished-at="2022-10-31T06:41:37Z" duration-ms="13833">
     <groups>
     </groups>
-    <test started-at="2022-10-28T12:46:27Z" name="Run on CHROME" finished-at="2022-10-28T12:46:43Z" duration-ms="15721">
+    <test started-at="2022-10-31T06:41:23Z" name="Run on CHROME" finished-at="2022-10-31T06:41:37Z" duration-ms="13833">
       <class name="com.gigsberg.sellers.Testcase_Sellers_New_Listing">
-        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.sellers.Testcase_Sellers_New_Listing@17a7f733]" started-at="2022-10-28T12:46:27Z" name="setup" finished-at="2022-10-28T12:46:30Z" duration-ms="2457" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String, java.lang.String)[pri:0, instance:com.gigsberg.sellers.Testcase_Sellers_New_Listing@17a7f733]" started-at="2022-10-31T06:41:23Z" name="setup" finished-at="2022-10-31T06:41:26Z" duration-ms="2497" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,7 +23,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="Voucher_TC001_Buy_With_Empty_Data(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.sellers.Testcase_Sellers_New_Listing@17a7f733]" started-at="2022-10-28T12:46:30Z" name="Voucher_TC001_Buy_With_Empty_Data" finished-at="2022-10-28T12:46:43Z" duration-ms="12950" status="FAIL">
+        <test-method signature="Voucher_TC001_Buy_With_Empty_Data(java.lang.reflect.Method)[pri:0, instance:com.gigsberg.sellers.Testcase_Sellers_New_Listing@17a7f733]" started-at="2022-10-31T06:41:26Z" name="Voucher_TC001_Buy_With_Empty_Data" finished-at="2022-10-31T06:41:37Z" duration-ms="11069" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -31,16 +31,39 @@
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.TimeoutException">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='type_ticket_opt clearfix']/li/label[text()='%s'] (tried for 5 second(s) with 500 milliseconds interval)]]>
+              <![CDATA[element click intercepted: Element <label for="ticket_type2">...</label> is not clickable at point (753, 293). Other element would receive the click: <input type="radio" id="ticket_type2" name="ticket_type_id" value="2" data-short_name="Paper Ticket">
+  (Session info: chrome=107.0.5304.62)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-9TSO38K', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2e2b1bc54e7b7d1364eacdb95a46b58]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //ul[@class='type_ticket_opt clearfix']/li/label[text()='%s'] (tried for 5 second(s) with 500 milliseconds interval)
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-at commons.BasePage.waitForElementVisible(BasePage.java:403)
-at pageObjects.GigsbergSellers.SellersDashboardPageObject.selectTicketType(SellersDashboardPageObject.java:47)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <label for="ticket_type2">...</label> is not clickable at point (753, 293). Other element would receive the click: <input type="radio" id="ticket_type2" name="ticket_type_id" value="2" data-short_name="Paper Ticket">
+  (Session info: chrome=107.0.5304.62)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'DESKTOP-9TSO38K', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 107.0.5304.62, chrome: {chromedriverVersion: 107.0.5304.62 (1eec40d3a576..., userDataDir: C:\Users\ADMIN\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:57674}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d2e2b1bc54e7b7d1364eacdb95a46b58
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:276)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:83)
+at commons.BasePage.clickToElement(BasePage.java:182)
+at pageObjects.GigsbergSellers.SellersDashboardPageObject.selectTicketType(SellersDashboardPageObject.java:48)
 at com.gigsberg.sellers.Testcase_Sellers_New_Listing.Voucher_TC001_Buy_With_Empty_Data(Testcase_Sellers_New_Listing.java:52)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
@@ -67,26 +90,13 @@ at org.testng.TestNG.run(TestNG.java:1017)
 at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.xpath: //ul[@class='type_ticket_opt clearfix']/li/label[text()='%s']
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'DESKTOP-9TSO38K', ip: '192.168.0.9', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
-Driver info: driver.version: unknown
-at org.openqa.selenium.support.ui.ExpectedConditions.lambda$findElement$0(ExpectedConditions.java:896)
-at java.base/java.util.Optional.orElseThrow(Optional.java:403)
-at org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:895)
-at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:44)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:206)
-at org.openqa.selenium.support.ui.ExpectedConditions$7.apply(ExpectedConditions.java:202)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-... 28 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Voucher_TC001_Buy_With_Empty_Data -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.sellers.Testcase_Sellers_New_Listing@17a7f733]" started-at="2022-10-28T12:46:43Z" name="afterClass" finished-at="2022-10-28T12:46:43Z" duration-ms="101" status="PASS">
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.gigsberg.sellers.Testcase_Sellers_New_Listing@17a7f733]" started-at="2022-10-31T06:41:37Z" name="afterClass" finished-at="2022-10-31T06:41:37Z" duration-ms="78" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
