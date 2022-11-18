@@ -1,26 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Football Ticket Net]">
-  <parameter name="url" value="https://gigsberg.com/"/>
+<suite thread-count="2" parallel="tests" name="Failed suite [Football Ticket Net]">
+  <parameter name="url" value="https://www.footballticketnet.com/international-friendly-matches"/>
   <listeners>
     <listener class-name="reportConfig.ExtentTestListener"/>
   </listeners>
-  <test thread-count="5" name="Run on CHROME(failed)">
+  <test thread-count="2" parallel="tests" name="Run on CHROME(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="com.gigsberg.regression.TC_Concerts_Regression">
+      <class name="fetchLink.fecthAllLinks">
         <methods>
-          <include name="TC_02_Concerts_Pop" invocation-numbers="0"/>
-          <include name="TC_08_Concerts_All_Concerts" invocation-numbers="0"/>
-          <include name="TC_05_Concerts_Rap" invocation-numbers="0"/>
-          <include name="TC_07_Concerts_Alternative_Indie" invocation-numbers="0"/>
           <include name="setup"/>
-          <include name="TC_04_Concerts_HardRockMetal" invocation-numbers="0"/>
-          <include name="TC_03_Concerts_R_and_B" invocation-numbers="0"/>
           <include name="afterClass"/>
-          <include name="TC_06_Concerts_HipHopReggae" invocation-numbers="0"/>
+          <include name="Voucher_TC001_Buy_With_Empty_Data" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.gigsberg.regression.TC_Concerts_Regression -->
+      </class> <!-- fetchLink.fecthAllLinks -->
     </classes>
   </test> <!-- Run on CHROME(failed) -->
 </suite> <!-- Failed suite [Football Ticket Net] -->

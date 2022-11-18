@@ -53,4 +53,9 @@ public class FooterPageObject extends BasePage {
 		return getElementText(driver, FooterPageUIs.EVENT_ORGANIZERS_TITLE_IN_ENGLISH);
 	}
 
+	public String getBlogInEnglish() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

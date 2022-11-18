@@ -51,17 +51,20 @@ public class Testcase_Sellers_New_Listing extends BaseTest {
 		sellersDashboardPage.selectSplitType("None");
 		sellersDashboardPage.selectTicketType("Paper Ticket");
 		sellersDashboardPage.selectCategoryDetails("Floor");
-		sellersDashboardPage.selectBlockDetails("Floor");
-		sellersDashboardPage.setYourPriceCurrency("Euro");
-		sellersDashboardPage.setFaceValueCurrency("Euro");
-		sellersDashboardPage.inputProceedsToSeller("5000");
-		sellersDashboardPage.inputPricePerTicket("5000");
+		sleepInSecond(1);
+		sellersDashboardPage.selectBlockDetails("Standing Area");
+
+		sellersDashboardPage.setYourPriceCurrency("Euro €");
+		sellersDashboardPage.setFaceValueCurrency("Euro €");
+		sellersDashboardPage.inputToProceedSeller("2000");
+		sellersDashboardPage.inputWebsitePrice("2000");
+		sellersDashboardPage.inputPricePerTicket("2000");
 
 		// Additional relevant information
 //		sellersDashboardPage.showHideRestrictions();
-		sellersDashboardPage.clickToIsSellerConectedGigsberg();
-		sellersDashboardPage.turnOffPublishTicket();
-		sellersDashboardPage.clickToAddListingButton();
+//		sellersDashboardPage.clickToIsSellerConectedGigsberg();
+//		sellersDashboardPage.turnOffPublishTicket();
+//		sellersDashboardPage.clickToAddListingButton();
 	}
 
 }

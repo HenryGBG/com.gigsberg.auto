@@ -1,4 +1,4 @@
-package com.gigsberg.regression;
+package com.gigsberg.main.menu;
 
 import java.lang.reflect.Method;
 

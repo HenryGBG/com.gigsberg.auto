@@ -1,11 +1,9 @@
-package com.gigsberg.regression;
+package com.gigsberg.main.menu;
 
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -91,7 +89,7 @@ public class Testcase_Theatre_Regression extends BaseTest {
 	@Test
 	public void TC_05_Theatre_Conferences_Speaking_Tour(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Theatre Items");
-		ExtentTestManager.getTest().log(Status.INFO, "Theatre - Step 00: Navigate to 'https://gigsberg.com/'");
+		ExtentTestManager.getTest().log(Status.INFO, "Theatre - Step 00: Navigate to 'https://stage.gigsberg.com/'");
 		homePage = PageGenerateManager.getHomePage(driver);
 
 		ExtentTestManager.getTest().log(Status.INFO,
@@ -108,7 +106,7 @@ public class Testcase_Theatre_Regression extends BaseTest {
 	@Test
 	public void TC_06_Theatre_All_Theatre(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Theatre Items");
-		ExtentTestManager.getTest().log(Status.INFO, "Theatre - Step 00: Navigate to 'https://gigsberg.com/'");
+		ExtentTestManager.getTest().log(Status.INFO, "Theatre - Step 00: Navigate to 'https://stage.gigsberg.com/'");
 		homePage = PageGenerateManager.getHomePage(driver);
 
 		ExtentTestManager.getTest().log(Status.INFO, "Theatre - Step 01: Navigate to 'Theatre/All Theatre'");

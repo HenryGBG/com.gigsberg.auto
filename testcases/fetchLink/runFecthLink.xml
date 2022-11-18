@@ -1,15 +1,15 @@
-<suite name="Gigsberg" parallel="methods" thread-count="5">
+<suite name="Football Ticket Net" parallel="tests" thread-count="2">
 	<listeners>
 		<listener class-name="reportConfig.ExtentTestListener" />
 	</listeners>
-	<parameter name="url" value="https://stage.gigsberg.com/" />
+
+	<parameter name="url" value="https://www.footballticketnet.com/manchester-united-football-tickets" />
+
 
 	<test name="Run on CHROME">
 		<parameter name="browser" value="chrome" />
 		<classes>
-			<class name="com.gigsberg.regression.Testcase_Account_Regression" />
-
+			<class name="fetchLink.fecthAllLinks" />
 		</classes>
 	</test>
-
 </suite> <!-- Suite -->

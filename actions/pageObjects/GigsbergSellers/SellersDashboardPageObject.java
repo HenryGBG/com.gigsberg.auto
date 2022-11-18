@@ -1,6 +1,8 @@
 package pageObjects.GigsbergSellers;
 
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.SendKeysAction;
 
 import commons.BasePage;
 import pageUIs.com.gigsberg.sellers.SellersDashboardPageUIs;
@@ -34,8 +36,8 @@ public class SellersDashboardPageObject extends BasePage {
 //	}
 
 	public void selectNumberTicket(String numberTicket) {
-		waitForElementVisible(driver, SellersDashboardPageUIs.NUMBER_TICKET_CHECKBOX);
-		clickToElement(driver, SellersDashboardPageUIs.NUMBER_TICKET_CHECKBOX);
+		waitForElementVisible(driver, SellersDashboardPageUIs.NUMBER_TICKET_CHECKBOX, numberTicket);
+		clickToElement(driver, SellersDashboardPageUIs.NUMBER_TICKET_CHECKBOX, numberTicket);
 	}
 
 	public void selectSplitType(String splitType) {
@@ -49,34 +51,36 @@ public class SellersDashboardPageObject extends BasePage {
 	}
 
 	public void selectCategoryDetails(String categoryDetails) {
-		waitForElementVisible(driver, SellersDashboardPageUIs.CATEGORY_DETAILS_XPATH);
+		waitForElementVisible(driver, SellersDashboardPageUIs.CATEGORY_DETAILS_XPATH, categoryDetails);
 		selectItemInDefaultDropdown(driver, SellersDashboardPageUIs.CATEGORY_DETAILS_XPATH, categoryDetails);
+
 	}
 
 	public void selectBlockDetails(String blockDetails) {
-		waitForElementVisible(driver, SellersDashboardPageUIs.BLOCK_DETAILS_XPATH);
+		waitForElementVisible(driver, SellersDashboardPageUIs.BLOCK_DETAILS_XPATH, blockDetails);
 		selectItemInDefaultDropdown(driver, SellersDashboardPageUIs.BLOCK_DETAILS_XPATH, blockDetails);
 	}
 
 	public void setYourPriceCurrency(String yourPriceCurrency) {
-		waitForElementVisible(driver, SellersDashboardPageUIs.YOUR_PRICE_CURRENCY_XPATH);
+		waitForElementVisible(driver, SellersDashboardPageUIs.YOUR_PRICE_CURRENCY_XPATH, yourPriceCurrency);
 		selectItemInDefaultDropdown(driver, SellersDashboardPageUIs.YOUR_PRICE_CURRENCY_XPATH, yourPriceCurrency);
 	}
 
 	public void setFaceValueCurrency(String faceValueCurrency) {
-		waitForElementVisible(driver, SellersDashboardPageUIs.FACE_VALUE_CURRENCY_XPATH);
+		waitForElementVisible(driver, SellersDashboardPageUIs.FACE_VALUE_CURRENCY_XPATH, faceValueCurrency);
 		selectItemInDefaultDropdown(driver, SellersDashboardPageUIs.FACE_VALUE_CURRENCY_XPATH, faceValueCurrency);
 	}
 
-	public void inputProceedsToSeller(String proceedToSeller) {
-		waitForElementVisible(driver, SellersDashboardPageUIs.PROCEED_TO_SELLER_TEXTBOX);
-		sendkeyToElement(driver, SellersDashboardPageUIs.PROCEED_TO_SELLER_TEXTBOX, proceedToSeller);
+	public void inputWebsitePrice(String proceedToSeller) {
+		waitForElementVisible(driver, SellersDashboardPageUIs.WEBSITE_PRICE_SELLER_TEXTBOX);
+		sendkeyToElement(driver, SellersDashboardPageUIs.WEBSITE_PRICE_SELLER_TEXTBOX, proceedToSeller);
 
 	}
 
 	public void inputPricePerTicket(String pricePerTicket) {
 		waitForElementVisible(driver, SellersDashboardPageUIs.PRICE_PER_TICKET_TEXTBOX);
-		sendkeyToElement(driver, SellersDashboardPageUIs.PRICE_PER_TICKET_TEXTBOX, pricePerTicket);
+		sendkeyToElementByJS(driver, SellersDashboardPageUIs.PRICE_PER_TICKET_TEXTBOX, pricePerTicket);
+//		sendkeyToElement(driver, SellersDashboardPageUIs.PRICE_PER_TICKET_TEXTBOX, pricePerTicket);
 	}
 
 	public void clickToIsSellerConectedGigsberg() {
@@ -93,6 +97,77 @@ public class SellersDashboardPageObject extends BasePage {
 		waitForElementVisible(driver, SellersDashboardPageUIs.ADD_LISTING_BUTTON);
 		clickToElement(driver, SellersDashboardPageUIs.ADD_LISTING_BUTTON);
 
+	}
+
+	public void inputToProceedSeller(String proceedSeller) {
+		waitForElementVisible(driver, SellersDashboardPageUIs.PROCEED_SELLER_TICKET_TEXTBOX);
+		sendkeyToElementByJS(driver, SellersDashboardPageUIs.PROCEED_SELLER_TICKET_TEXTBOX, proceedSeller);
+	}
+
+	public String getDashboardLabel() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.DASHBOARD_MENU_XPATH);
+		return getElementText(driver, SellersDashboardPageUIs.DASHBOARD_MENU_XPATH);
+	}
+
+	public void clickToListingsMenu() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.LISTING_MENU_XPATH);
+		clickToElement(driver, SellersDashboardPageUIs.LISTING_MENU_XPATH);
+	}
+
+	public String getListingsPageLabel() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.LISTING_LABEL_XPATH);
+		return getElementText(driver, SellersDashboardPageUIs.LISTING_LABEL_XPATH);
+	}
+
+	public void clickToSalesMenu() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.SALE_MENU_XPATH);
+		clickToElement(driver, SellersDashboardPageUIs.SALE_MENU_XPATH);
+
+	}
+
+	public String getSalesPageLabel() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.SALES_LABEL_XPATH);
+		return getElementText(driver, SellersDashboardPageUIs.SALES_LABEL_XPATH);
+	}
+
+	public void clickToPaymentMenu() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.PAYMENTS_MENU_XPATH);
+		clickToElement(driver, SellersDashboardPageUIs.PAYMENTS_MENU_XPATH);
+	}
+
+	public String getPaymentsLabel() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.PAYMENTS_LABEL_XPATH);
+		return getElementText(driver, SellersDashboardPageUIs.PAYMENTS_LABEL_XPATH);
+	}
+
+	public void clickToAccountInfoMenu() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.ACCOUNT_INFO_MENU_XPATH);
+		clickToElement(driver, SellersDashboardPageUIs.ACCOUNT_INFO_MENU_XPATH);
+	}
+
+	public String getAccountInfoLabel() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.ACCOUNT_INFO_LABEL_XPATH);
+		return getElementText(driver, SellersDashboardPageUIs.ACCOUNT_INFO_LABEL_XPATH);
+	}
+
+	public void clickToAddressMenu() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.ADDRESS_MENU_XPATH);
+		clickToElement(driver, SellersDashboardPageUIs.ADDRESS_MENU_XPATH);
+	}
+
+	public java.lang.String getAddressLabel() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.ADDRESS_INFO_MENU_XPATH);
+		clickToElement(driver, SellersDashboardPageUIs.ADDRESS_INFO_MENU_XPATH);
+	}
+
+	public void clickToPaymentAccountMenu() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.PAYMENT_ACCOUNT_MENU_XPATH);
+		clickToElement(driver, SellersDashboardPageUIs.PAYMENT_ACCOUNT_MENU_XPATH);
+	}
+
+	public java.lang.String getPaymentAccountLabel() {
+		waitForElementVisible(driver, SellersDashboardPageUIs.PAYMENT_ACCOUNT_MENU_XPATH);
+		clickToElement(driver, SellersDashboardPageUIs.PAYMENT_ACCOUNT_MENU_XPATH);
 	}
 
 }

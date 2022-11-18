@@ -1,4 +1,4 @@
-package com.gigsberg.regression;
+package com.gigsberg.main.menu;
 
 import java.lang.reflect.Method;
 
@@ -25,13 +25,12 @@ public class Testcase_Account_Regression extends BaseTest {
 	@BeforeMethod
 	public void setup(String browserName, String appUrl) {
 		driver = getBrowserDriver(browserName, appUrl);
-
 	}
 
 	@Test
 	public void TC_01_Account_Sign_Up_With_Empty_Data(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Account");
-		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 00: Navigate to 'https://gigsberg.com/'");
+		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 00: Navigate to 'Gigsberg'");
 		homePage = PageGenerateManager.getHomePage(driver);
 
 		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 01: Click to 'Log in' link");
@@ -51,25 +50,29 @@ public class Testcase_Account_Regression extends BaseTest {
 	@Test
 	public void TC_02_Account_Sign_Up_With_Invalid_Fullname(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Account");
-		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 01: Navigate to 'https://gigsberg.com/'");
+		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 01: Navigate to 'https://state.gigsberg.com/'");
 		homePage = PageGenerateManager.getHomePage(driver);
 
 		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 02: Click to 'Log in' link");
 		homePage.clickToLoginLink();
+
+		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 03: Click to 'Sign up' button at Login form");
 		homePage.clickToSignUpButtonAtLoginForm();
 
 		ExtentTestManager.getTest().log(Status.INFO,
-				"Account - Step 03: Input to invalid Fullname, valid Email, valid Password");
+				"Account - Step 04: Input to invalid Fullname, valid Email, valid Password");
 		homePage.inputToFullnameTextbox("123456");
+
 		homePage.inputToEmailTextbox(GlobalConstants.VALID_EMAIL);
 		homePage.inputToPasswordTextbox(GlobalConstants.VALID_PASSWORD);
 
-		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 04: Click to 'Sign Up' button");
+		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 05: Click to 'Sign Up' button");
 		homePage.clickToSignUpButtonAtSignUpForm();
 		sleepInSecond(1);
 
 		ExtentTestManager.getTest().log(Status.INFO,
-				"Account - Step 05: Verify the Error message at Fullname Textbox displayed");
+				"Account - Step 06: Verify the Error message at Fullname Textbox displayed");
+
 		Assert.assertEquals(homePage.getErrorMessageAtFullnameTextbox(),
 				GlobalBaseUI.ERROR_MESSAGE_AT_FULLNAME_TEXTBOX);
 
@@ -205,7 +208,7 @@ public class Testcase_Account_Regression extends BaseTest {
 
 	}
 
-//	@Test
+	@Test
 	public void TC_08_Account_Login_With_Invalid_Email_Invalid_Password(Method method) {
 		ExtentTestManager.startTest(method.getName(), "Account");
 		ExtentTestManager.getTest().log(Status.INFO, "Account - Step 01: Navigate to 'https://gigsberg.com/'");

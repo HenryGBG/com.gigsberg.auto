@@ -388,6 +388,17 @@ public class BasePage {
 				originalStyle);
 	}
 
+	public void highlightElementByJS(WebDriver driver, String locatorType, String... dynamicValues) {
+		jsExecutor = (JavascriptExecutor) driver;
+		WebElement element = getWebElement(driver, locatorType);
+		String originalStyle = element.getAttribute("style");
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
+				"border: 2px solid red; border-style: dashed;");
+		sleepInSecond(1);
+		jsExecutor.executeScript("arguments[0].setAttribute(arguments[1], arguments[2])", element, "style",
+				originalStyle);
+	}
+
 	public void waitToElementPresence(WebDriver driver, String locatorType) {
 		WebDriverWait explicitWait = new WebDriverWait(driver, longTimeout);
 		explicitWait.until(ExpectedConditions.presenceOfElementLocated(getBylocator(locatorType)));

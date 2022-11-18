@@ -1,4 +1,4 @@
-package com.gigsberg.regression;
+package com.gigsberg.main.menu;
 
 import java.lang.reflect.Method;
 
@@ -144,7 +144,7 @@ public class Testcase_Footer_Menu extends BaseTest {
 		footerPage = homePage.clickToMenuByHref("https://bloggigsberg.wordpress.com/");
 
 		ExtentTestManager.getTest().log(Status.INFO, "Footer - Step 02: Verify the title 'Blog' displayed ");
-		Assert.assertEquals(footerPage.getStudentDiscountInEnglish(), FooterPageUIs.STUDENT_DISCOUNT_LABEL_IN_ENGLISH);
+		Assert.assertEquals(footerPage.getPageTitle(driver), FooterPageUIs.BLOG_LABEL_IN_ENGLISH);
 	}
 
 	@Test

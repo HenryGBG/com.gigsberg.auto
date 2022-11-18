@@ -1,9 +1,11 @@
-package com.gigsberg.regression;
+package template;
 
 import java.lang.reflect.Method;
 
 import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -14,15 +16,19 @@ import commons.PageGenerateManager;
 import pageObjects.Gigbergs.HomePageObject;
 import reportConfig.ExtentTestManager;
 
-public class templateTestcase extends BaseTest {
+public class templateBeforeMethod extends BaseTest {
 	WebDriver driver;
 	HomePageObject homePage;
 
 	@Parameters({ "browser", "url" })
-	@BeforeClass
+	@BeforeMethod
 	public void setup(String browserName, String appUrl) {
 		driver = getBrowserDriver(browserName, appUrl);
+	}
 
+	@AfterMethod(alwaysRun = true)
+	public void afterClass() {
+		driver.quit();
 	}
 
 	@Test

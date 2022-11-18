@@ -6,7 +6,7 @@
 	<test name="Run on CHROME">
 		<parameter name="browser" value="h_chrome" />
 		<packages>
-			<package name="com.gigsberg.regression" />
+			<package name="com.gigsberg.main.menu" />
 		</packages>
 	</test>
 </suite> <!-- Suite -->
